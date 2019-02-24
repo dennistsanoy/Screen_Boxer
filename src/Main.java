@@ -4,6 +4,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -85,6 +86,8 @@ public class Main extends Application{
 
         Scene scene = new Scene(grid, 345,200);
         scene.getStylesheets().add("PumpkinDot.css");
+        Image icon = new Image("file:logo.png");
+        window.getIcons().add(icon);
 
         window.setScene(scene);
         window.show();
